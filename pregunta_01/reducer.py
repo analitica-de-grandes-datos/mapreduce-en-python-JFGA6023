@@ -6,20 +6,20 @@ import sys
 
 if __name__ == '__main__':
 
-    actkey = None
+    curkey = None
     total = 0
     for line in sys.stdin:
 
         key, val = line.split('\t')
         val = int(val)
 
-        if key == actkey:
+        if key == curkey:
             total += val
         else:
-            if actkey is not None:
-                sys.stdout.write('{}\t{}\n'.format(actkey, total))
+            if curkey is not None:
+                sys.stdout.write('{}\t{}\n'.format(curkey, total))
 
-            actkey = key
+            curkey = key
             total = val
 
-    sys.stdout.write("{}\t{}\n".format(actkey, total))
+    sys.stdout.write("{}\t{}\n".format(curkey, total))
