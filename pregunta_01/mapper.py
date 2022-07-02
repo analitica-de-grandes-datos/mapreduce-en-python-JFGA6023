@@ -3,4 +3,4 @@
 #
 import sys
 for row in sys.stdin:
-sys.stdout.write("{}\t1\n".format(row.split(",")[2]))
+    sys.stdout.write("{}\t1\n".format(row.split(",")[2]))
