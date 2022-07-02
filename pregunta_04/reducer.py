@@ -24,3 +24,5 @@ if __name__ == '__main__':
 
             Keyname = key
             ttl = valor   
+
+    sys.stdout.write('{},{}\n'.format(Keyname, ttl))
