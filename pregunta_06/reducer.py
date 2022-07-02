@@ -16,7 +16,7 @@ if __name__ == '__main__':
     for line in sys.stdin:
         
         key, valor = line.split("\t")
-        val = float(valor)
+        valor = float(valor)
               
         if key == keyname:
         
